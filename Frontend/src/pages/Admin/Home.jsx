@@ -9,7 +9,7 @@ export default function Home() {
 
   const fetchProducts = async () => {
     try {
-      const response = await axios.get("http://localhost:5000/api/products");
+      const response = await axios.get("https://rablo-z1is.onrender.com/api/products");
       setProducts(response.data);
     } catch (error) {
       handleFetchError("products", error);
@@ -21,7 +21,7 @@ export default function Home() {
   }, []);
 
   const handleDelete =(id)=>{
-    axios.delete(`http://localhost:5000/api/deleteUser/${id}`)
+    axios.delete(`https://rablo-z1is.onrender.com/api/deleteUser/${id}`)
     .then(result => {console.log(result)
      fetchProducts()})
     // .then(result => {console.log(result)
