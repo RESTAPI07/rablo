@@ -18,7 +18,7 @@ export default function HomePage() {
 
   const fetchCategories = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/categories');
+      const response = await axios.get('https://rablo-z1is.onrender.com/api/categories');
       setCategories(response.data);
       console.log('Categories API Response:', response.data);
     } catch (error) {
