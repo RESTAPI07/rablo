@@ -23,7 +23,7 @@ export default function AdminAddProducts() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/api/products', {
+            const response = await axios.post('https://rablo-z1is.onrender.com/api/products', {
                 name: values.productName,
                 description: values.productDescription,
                 image: values.productImage,
