@@ -29,7 +29,7 @@ export default function AdminUpdateProducts() {
 
     const GetProoductDetails = async () => {
         try {
-            const response = await axios.get(`http://localhost:5000/api/getProduct/${id}`);
+            const response = await axios.get(`https://rablo-z1is.onrender.com/api/getProduct/${id}`);
             const productData = response.data;
             setValues(prevState => ({
                 ...prevState,
