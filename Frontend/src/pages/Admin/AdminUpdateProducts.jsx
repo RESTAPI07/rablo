@@ -60,7 +60,7 @@ export default function AdminUpdateProducts() {
   
         try {
             const { productName, productDescription, productImage, productPrice, productCategory } = values;
-            await axios.put(`http://localhost:5000/api/UpdateProduct/${id}`, { name: productName, description: productDescription, image: productImage, price: productPrice, category: productCategory });
+            await axios.put(`https://rablo-z1is.onrender.com/api/UpdateProduct/${id}`, { name: productName, description: productDescription, image: productImage, price: productPrice, category: productCategory });
             setSuccessMessage('Product updated successfully');
         } catch (error) {
           console.log(error);
