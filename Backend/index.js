@@ -16,7 +16,7 @@ mongoose.connect(process.env.MongoURI)
 
 // Configuring CORS options.
 const corsOptions = {
-    origin: 'http://localhost:5173', // Add the correct origin
+    origin: 'https://apnadukaanpromax.netlify.app/', // Add the correct origin
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true,
     optionsSuccessStatus: 204,
